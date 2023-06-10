@@ -41,7 +41,8 @@ cp -p /var/named/named.localhost example.com.zone
 
 /var/named/example.com.zone
 ```
-			SOA 	ns.example.com. CyberSecurityHat.example.com.	
+$TTL 600
+@	IN	    SOA     ns.example.com. CyberSecurityHat.example.com.
 	NS			    ns.example.com.
 	A			    200.168.123.10
 	MX 10	example.com.
@@ -59,7 +60,8 @@ cp -p /var/named/example.com.zone /var/named/example.com.rev
 
 /var/named/example.com.rev
 ```
-			SOA	    ns.example.com. 권한 소유자.example.com.
+$TTL 600
+@	IN	    SOA     ns.example.com. CyberSecurityHat.example.com.
 	NS			    ns.example.com.
 10	PTR			    example.com.
 10	PTR			    ns.example.com.
