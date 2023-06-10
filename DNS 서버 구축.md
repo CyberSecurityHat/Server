@@ -6,11 +6,13 @@
 - Domain : example.com
 - Owner : CyberSecurityHat
 
+<br>
+
 ```
-# rpm -q bind
-# yum install bind
-# rpm -qi bind
-# rpm -qc bind
+rpm -q bind
+yum install bind
+rpm -qi bind
+rpm -qc bind
 ```
 
 /etc/named.rfc1912.zone
