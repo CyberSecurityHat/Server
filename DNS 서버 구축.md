@@ -9,10 +9,10 @@
 <br>
 
 ```
-rpm -q bind
-yum install bind
-rpm -qi bind
-rpm -qc bind
+# rpm -q bind
+# yum install bind
+# rpm -qi bind
+# rpm -qc bind
 ```
 
 <br>
@@ -36,7 +36,7 @@ zone "123.168.200.in-addr.arpa" IN {
 <br>
 
 ```
-cp -p /var/named/named.localhost example.com.zone
+# cp -p /var/named/named.localhost example.com.zone
 ```
 
 <br>
@@ -55,7 +55,7 @@ www A               www.200.168.123.10
 <br>
 
 ```
-cp -p /var/named/example.com.zone /var/named/example.com.rev
+# cp -p /var/named/example.com.zone /var/named/example.com.rev
 ```
 
 <br>
