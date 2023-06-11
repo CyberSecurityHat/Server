@@ -15,6 +15,8 @@ rpm -qi bind
 rpm -qc bind
 ```
 
+<br>
+
 /etc/named.rfc1912.zone
 ```
 zone "example.com" IN {
