@@ -12,5 +12,5 @@
 # systemctl stop firewalld
 # rpm -q ftp
 # yum install ftp
-# ftp [SERVER IP] (ftp 접속)
+# ftp [SERVER IP]
 ```
