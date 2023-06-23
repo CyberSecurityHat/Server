@@ -29,41 +29,42 @@ date # 시간 확인
 
 3. 소스 설치 진행
 ```
-which gcc
+# which gcc
 
-rpm -e httpd
-rpm -e httpd* --nodeps
+# rpm -e httpd
+# rpm -e httpd* --nodeps
 
-rpm -qa |grep httpd
+# rpm -qa |grep httpd
 
-cd /usr/local/src
+# cd /usr/local/src
 
-tar jxvf <file_name>.tar.bz2
-tar zxvf
-tar Jxvf
+# tar jxvf <file_name>.tar.bz2
+# tar zxvf
+# tar Jxvf
 
-cd httpd.2.4.54/
+# cd httpd.2.4.54/
 
-./configure --help
-./configure --prefix=/usr/local/apache \
+# ./configure --help
+# ./configure --prefix=/usr/local/apache \
 >  --enable-so   --enable-mods-shared=all
 
-# 실패 시, 한 단계 올라가서 지우고 다시. make clean은 권장하지 않음
+### 실패 시, 한 단계 올라가서 지우고 다시. make clean은 권장하지 않음 ###
 
-make && make install # make 성공 시, make install 실행
-ls /usr/local/apache
-ls /usr/local/apache/modules/* | wc -l
+# make && make install # make 성공 시, make install 실행
+# ls /usr/local/apache
+# ls /usr/local/apache/modules/* | wc -l
 
 ### 실패 한 경우 ###
-rm -rf /usr/local/apache
-cd ..
-rm -rf httpd2.4.54
-# 설치 재진행
 
-ls -l /usr/local/apache/modules/* | wc -l # 설치 확인
-du -sh /usr/local/apache # 설치 확인
+# rm -rf /usr/local/apache
+# cd ..
+# rm -rf httpd2.4.54
+-> 설치 재진행
 
-vi /usr/local/apache/conf/httpd.conf
+# ls -l /usr/local/apache/modules/* | wc -l # 설치 확인
+# du -sh /usr/local/apache # 설치 확인
+
+# vi /usr/local/apache/conf/httpd.conf
 ```
 
 <br>
