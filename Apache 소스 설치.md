@@ -15,14 +15,14 @@
 
 2. 확인 작업
 ```
-sha256sum <fime_name>
+# sha256sum <fime_name>
 
-diff <file_name> <filename>
+# diff <file_name> <filename>
 
-md5 sum <file_name>
+# md5 sum <file_name>
 
-rdate -s time.bora.net # 시간 동기화
-date # 시간 확인
+# rdate -s time.bora.net # 시간 동기화
+# date # 시간 확인
 ```
 
 <br>
